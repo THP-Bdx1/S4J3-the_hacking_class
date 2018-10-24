@@ -1,24 +1,15 @@
-# README
+Ce projet a été réalisé par la Team 1 Bordeaux, à savoir :
+- François,
+- Valérian,
+- Paul,
+- David,
+- William
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Il reflète la structure de The Hacking Pinterest, un site similaire à Pinterest.
+Il comporte une base de donnée :
+  - Student. Chaque éleve comporte un nom et un prénom.
+  - SchoolClass. Chaque classe peut comporter plusieurs éleves.
+  
+Lancez un "bundle install" pour installer les différentes gem, dont Faker qui est ici utilisé pour générer des bases de données aléatoires.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+N'hésitez pas à lancer un petit "rails db:reset" pour une nouvelle base de donnée aléatoire toute fraîche ;) 
