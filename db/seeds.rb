@@ -5,16 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
 
+
+#Array contenant le nom des classes que l'ont veut creer, etant peut nombreuses : pas la peine d'utiliser faker.
 classes = ["Sixième", "Cinquième", "Quatrième", "Troisième"]
-#
+
+#On utilise each do pour creer une classe pour chaque element de notre array.
 classes.each do |sc|
   cl = SchoolClass.create!(name: sc)
 end
 
-
-require 'faker'
-
+#On creer ici 100 eleves, leur noms et prénoms sont donc généré au hasard en utilisant faker, et leur classe leur est attitré aussi au hasard grance a la fonction random parmis les 4 classes existantes.
 100.times do
   student = Student.create!(first_name: Faker::DragonBall.character, last_name: Faker::Music.instrument, school_class_id: Random.new.rand(1..4))
 end
